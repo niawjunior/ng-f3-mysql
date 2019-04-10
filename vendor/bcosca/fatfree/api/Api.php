@@ -26,4 +26,19 @@ class Api
         return $api_data;
     }
 
+    public function addUser($params)
+    {
+        $post_data = file_get_contents("php://input");
+        if($post_data != '') {
+            $post_data_array = json_decode($post_data, true);
+            $name = $post_data_array['name'];
+            $result = $this->db->exec("INSERT INTO `user`(firstName) VALUES(:name)", array(
+                ':name' => $name
+            ));
+            if ($result) {
+                echo $post_data;
+            }
+        }
+    }
+
   }

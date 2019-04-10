@@ -83,4 +83,5 @@ class User {
 	}
 }
 $f3->route('GET /users', 'Api->getUsersAll');
+$f3->route('POST /users', 'Api->addUser');
 $f3->run();
