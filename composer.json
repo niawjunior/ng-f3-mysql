@@ -1,0 +1,12 @@
+{
+    "name": "niawjunior/htdocs",
+    "require": {
+        "bcosca/fatfree": "^3.6"
+    },
+    "authors": [
+        {
+            "name": "niawjunior",
+            "email": "niawkung@gmail.com"
+        }
+    ]
+}

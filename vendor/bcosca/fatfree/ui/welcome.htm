@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col" style="text-align:right;">NAME</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in list">
+          <td>{{ item.id }}</td>
+          <td style="text-align:right;">{{ item.name }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
